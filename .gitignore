@@ -1,0 +1,10 @@
+# Don't push ansible temp files
+*.retry
+ansible/.ansible_cache/
+
+# No secrets
+*.env
+*.secret
+
+# OS junk
+.DS_Store

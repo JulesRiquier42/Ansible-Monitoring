@@ -1,0 +1,11 @@
+global:
+  scrape_interval: 15s     # fetch metrics every 15 seconds
+
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']   # prometheus monitors itself
+
+  - job_name: 'grafana'
+    static_configs:
+      - targets: ['grafana:3000']     # grafana exposes basic metrics too

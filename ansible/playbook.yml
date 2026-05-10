@@ -1,0 +1,6 @@
+- name: Deploy monitoring stack
+  hosts: monitoring
+  become: true          # run as sudo when needed
+
+  roles:
+    - monitoring
